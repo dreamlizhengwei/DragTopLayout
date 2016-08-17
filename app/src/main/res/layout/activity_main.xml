@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.test.dragtoplayout.DragTopLayout
+            android:id="@+id/drag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.test.dragtoplayout.ExpandableTextView
+                    android:id="@+id/expand_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="0，1，2，3，4，5，6，7，8，9，10，11，12，13，14，15，16，17，18，19，20，21，22，23，24，25，26，27，28，29，30"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent" />
+                </com.test.dragtoplayout.ExpandableTextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0f0"
+                android:orientation="vertical">
+                <ListView
+                    android:id="@+id/lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ListView>
+            </LinearLayout>
+        </com.test.dragtoplayout.DragTopLayout>
+
+
+
+
+</RelativeLayout>
