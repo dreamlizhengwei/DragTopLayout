@@ -88,7 +88,6 @@ public class DragTopLayout extends FrameLayout {
                 float scrollByDelt = -y + mDownPoint.y;
                 // 假如按照计算的距离偏移后的偏移量，即getScrollY()的值
                 float realDelt = getScrollY() + scrollByDelt;
-                Log.e("lzw", "------> " + scrollByDelt + "  " + realDelt);
                 if (realDelt < 0) { // 表示按照实际的手指滑动距离向下移动的话太大，则直接计算出刚好头部显示出来的realDelt
                     scrollByDelt = 0 - getScrollY();
                 } else if (realDelt > mHeadHeight) { // 同样表示实际距离太大，计算出合适的距离
