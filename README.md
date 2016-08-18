@@ -1,5 +1,7 @@
 # DragTopLayout
 
+简单易用，只有一个类
+
 效果图如下，录屏有点卡
 
 ![](/screen_shot.gif)
